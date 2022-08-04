@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #050505;
+}
+
+li {
+    list-style: none;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+body {
+    background-color: #f3f5f7;
+    font: 14px 微软雅黑;
+    color: #050505;
+}
+
+.header {
+    height: 42px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.logo {
+    float: left;
+    width: 195px;
+    height: 42px;
+    background: url(../images/logo.png);
+}
+.nav {
+    float: left;
+    margin-left: 48px;
+}
+
+.nav li {
+    float: left;
+}
+.nav li a {
+    display: block;
+    height: 42px;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 0 9px;
+    margin-left: 22px;
+}
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+.search {
+    float: left;
+    /* 可以删掉 避免input掉下来   */
+    width: 412px;
+    height: 42px;
+    border: 1px solid #00a4ff;
+    margin-left: 85px;
+}
+.search input {
+    float: left;
+    width: 360px;
+    height: 40px;
+    border: 0;
+    /* 清除轮廓线 */
+    outline: 0;
+    padding-left: 18px;
+}
+/* 拓展 修改placeholder的颜色*/
+.search input::placeholder {
+    color: #bfbfbf;
+}
+
+.search button {
+    float: left;    
+    width: 50px;
+    height: 40px;
+    background: url(../images/btn.png);
+    border: 0;
+    /* 清除轮廓线 */
+    outline: 0;
+}
+
+.user {
+    float: left;
+    margin-left: 30px;
+    line-height: 42px;
+    color: #666;
+}
+
+.user img {
+    /* 设置基线对齐 后面会讲  */
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+.banner .w {
+    height: 420px;
+    background: url(../images/banner2.png);
+}
+.aside {
+    float: left;
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, .3);
+    padding: 10px 20px 0;
+}
+
+.aside li a {
+    color: #fff;
+    line-height: 44px;
+}
+.aside li a span {
+    float: right;
+    font-family: simsun;
+}
+.aside li a:hover {
+    color: #00b4ff;
+}
+.course {
+    float: right;
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+.course .title {
+    height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    color: #fff;
+    /* 字与字之间的距离 */
+    letter-spacing: 2px;
+}
+.course ul  {
+    padding-top: 5px;
+}
+.course ul li {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 13px 0;
+    margin: 0 18px;
+}
+.course li h4 {
+    color: #4e4e4e;
+    font-weight: 400;
+}
+.course li h4 span {
+    font-size: 16px;
+}
+.course li p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.course .course-all {
+    display: block;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 38px;
+    color: #00a4ff;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px auto 0;
+    letter-spacing: 2px;
+}
+
+.goods {
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    margin-top: 8px;
+     /* box-shadow: 水平位置 垂直位置 模糊程度 阴影大小 阴影颜色 内inset/外阴影 ; */
+    box-shadow: 0 2px 3px rgba(118, 118, 118, .2);
+}
+
+.goods .title {
+    float: left;
+    margin-left: 34px;
+    color: #00a4ff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.goods .goods-nav {
+    float: left;
+}
+.goods .goods-nav li {
+    float: left;
+    font-size: 16px;
+}
+.goods .goods-nav li span {
+    margin: 0 33px;
+    color: #bfbfbf;
+}
+.goods .mod {
+    float: right;
+    color: #00a4ff;
+    margin-right: 26px;
+}
+
+.box {
+    margin-top: 35px;
+}
+
+.box-hd {
+    height: 40px;
+
+}
+.box-hd .title {
+    float: left;
+    font-weight: 400;
+    color: #494949;
+    font-size: 20px;
+}
+.box-hd .check-all {
+    float: right;
+    color: #a5a5a5;
+    font-size: 12px;
+    margin: 5px 35px 0 0;
+}
+.box-bd {
+    height: 555px;
+}
+
+.box-bd li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    margin-right: 15px;
+}
+.box-bd li:nth-child(5n) {
+    margin-right: 0;
+}
+.box-bd li:nth-child(-n+5) {
+    margin-bottom: 15px;
+}
+.box-bd li img {
+    width: 228px;
+    height: 155px;
+}
+.box-bd .title {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 20px 20px 15px;
+    height: 39px;
+}
+.box-bd .desc {
+    color: #999999;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.box-bd .desc span {
+    color: #ff7c2d;
+}
+.box-bd li a {
+    display: block;
+    width: 228px;
+    height: 270px;
+}
+.footer {
+    height: 417px;
+    background-color: #fff;
+    margin-top: 40px;
+    padding-top: 30px;
+}
+.copyright {
+    float: left;
+}
+.copyright p {
+    font-size: 12px;
+    color: #666;
+    margin: 25px 0 15px;
+}
+.copyright .download {
+    display: block;
+    width: 120px;
+    height: 36px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 34px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+.links {
+    float: right;
+}
+.links dl {
+    float: left;
+    width: 222px;
+}
+.links dl:last-child {
+    width: 90px;
+}
+.links dt {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.links dd {
+    font-size: 12px;
+    line-height: 21px;
+}
+.links dd a:hover {
+    color: #00a4ff;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ::before  在...之前 */
+        /* ::after   在...之后*/
+
+        div::before {
+            /* 这个书序必须写 否则伪元素不起效果 */
+            content: '锄禾';
+        }
+
+        div::after {
+            content: '当午';
+            /* 伪元素添加进来的是行内元素 想要设置大小 就需要模式转换 */
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 元素 >>> 标签 -->
+    <!-- 伪元素 >>> 伪标签  -->
+    <div>
+        日
+    </div>
+
+
+
+</body>
+
+</html>
